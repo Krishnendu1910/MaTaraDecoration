@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma Tara Decoration | Luxury Event Management</title>
+
+    <!-- Google Font for Brand -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+
+        <!-- LEFT : LOGO -->
+        <div class="nav-left">
+            <img src="https://images.unsplash.com/photo-1614977645540-7abd88ba8e56?q=80&w=200" alt="Ma Kali Logo"
+                class="nav-logo">
+        </div>
+
+        <!-- CENTER : BRAND -->
+        <div class="nav-center">
+            Ma Tara Decoration
+        </div>
+
+        <!-- RIGHT : DESKTOP MENU -->
+        <nav class="nav-right nav-links">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Book</a>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </nav>
+
+        <!-- HAMBURGER (MOBILE) -->
+        <div class="hamburger">☰</div>
+
+    </header>
+
+    <!-- MOBILE SIDE MENU -->
+    <div class="mobile-menu">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Book</a>
+    </div>
+
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <h1 class="hero-title" id="heroText">DECORATING YOUR PRECIOUS MOMENTS</h1>
+    </section>
+    <div class="hero-actions">
+        <a href="#services" class="hero-btn primary">View Services</a>
+        <a href="#contact" class="hero-btn outline">Book Consultation</a>
+    </div>
+
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="section">
+        <h2 class="section-title">Our Signature Services</h2>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1587271636175-90d58cdad458" alt="Grand Wedding decoration">
+                <h3>Grand Weddings</h3>
+                <p>Traditional Indian wedding decor.</p>
+                <span class="price">Starting ₹1,50,000</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <div class="service-card">
+                <img src="4303.jpg" alt="Rice Ceremony decoration">
+                <h3>Rice Ceremony</h3>
+                <p>Bright & child-friendly décor.</p>
+                <span class="price">Starting ₹40,000</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1602631985686-1bb0e6a8696e" alt="Birthday decoration">
+                <h3>Birthdays</h3>
+                <p>Modern balloon & LED themes.</p>
+                <span class="price">Starting ₹25,000</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <div class="service-card">
+                <img src="4304.jpg"
+                    alt="Solemn Memorials decoration">
+                <h3>Solemn Memorials</h3>
+                <p>Peaceful white floral décor.</p>
+                <span class="price">Starting ₹30,000</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+                    alt="Custom Occasions decoration">
+                <h3>Custom Occasions</h3>
+                <p>Corporate & religious events.</p>
+                <span class="price">Custom Pricing</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+        </div>
+
+        <!-- EXPLORE MORE -->
+        <div class="explore-more">
+            <button id="exploreBtn">Explore More <span class="arrow">↓</span></button>
+        </div>
+
+        <!-- MORE SERVICES -->
+        <div class="services-grid more-services">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed" alt="Engagement decoration">
+                <h3>Engagement</h3>
+                <p>Elegant floral décor.</p>
+                <span class="price">Starting ₹60,000</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1529636798458-92182e662485" alt="Haldi Ceremony decoration">
+                <h3>Haldi Ceremony</h3>
+                <p>Yellow marigold themes.</p>
+                <span class="price">Starting ₹35,000</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da" alt="Mehendi decoration">
+                <h3>Mehendi</h3>
+                <p>Boho style décor.</p>
+                <span class="price">Starting ₹45,000</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+                <h3>Baby Shower</h3>
+                <p>Soft pastel balloon & floral themes.</p>
+                <span class="price">Starting ₹30,000</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30">
+                <h3>Anniversary Celebration</h3>
+                <p>Romantic lighting & floral décor.</p>
+                <span class="price">Starting ₹50,000</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+                <h3>Corporate Events</h3>
+                <p>Professional stage & branding setup.</p>
+                <span class="price">Custom Pricing</span>
+                <button class="book-btn">Book Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section id="about" class="section light why-us">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <h3>✨ Premium Quality</h3>
+                <p>Luxury finish.</p>
+            </div>
+            <div class="why-card">
+                <h3>🛕 Cultural Expertise</h3>
+                <p>Tradition with elegance.</p>
+            </div>
+            <div class="why-card">
+                <h3>⏱ On-Time</h3>
+                <p>Punctual execution.</p>
+            </div>
+            <div class="why-card">
+                <h3>💎 Custom Design</h3>
+                <p>Unique events.</p>
+            </div>
+            <div class="why-card">
+                <h3>🤝 Trusted Experience</h3>
+                <p>Years of event décor excellence.</p>
+            </div>
+            <div class="why-card">
+                <h3>🎨 Creative Team</h3>
+                <p>Designers with artistic vision.</p>
+            </div>
+            <div class="why-card">
+                <h3>📍 Local Expertise</h3>
+                <p>Deep understanding of local culture.</p>
+            </div>
+            <div class="why-card">
+                <h3>⭐ Client Satisfaction</h3>
+                <p>Happy clients & repeat bookings.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials">
+        <h2 class="section-title">What Our Clients Say</h2>
+
+        <div class="testi-grid">
+            <div class="testi-card">
+                <p>“Wedding decoration was beyond expectations. Truly premium work.”</p>
+                <h4>— Anirban Dutta</h4>
+            </div>
+
+            <div class="testi-card">
+                <p>“Very professional and culturally perfect decoration.”</p>
+                <h4>— Riya Banerjee</h4>
+            </div>
+
+            <div class="testi-card">
+                <p>“On-time delivery and beautiful design. Highly recommended.”</p>
+                <h4>— Souvik Paul</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= AUTO SLIDER GALLERY ================= -->
+    <section class="section slider-gallery">
+        <h2 class="section-title">Our Event Highlights</h2>
+        <p class="gallery-subtitle">Moments captured from our premium decorations</p>
+
+        <div class="slider-wrapper">
+            <div class="slider-track">
+                <img src="https://images.unsplash.com/photo-1587271636175-90d58cdad458">
+                <img src="https://images.unsplash.com/photo-1529636798458-92182e662485">
+                <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed">
+                <img src="https://images.unsplash.com/photo-1602631985686-1bb0e6a8696e">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30">
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= VIDEO GALLERY ================= -->
+    <section class="section video-gallery">
+        <h2 class="section-title">Event Videos</h2>
+        <p class="gallery-subtitle">Experience our work through live event moments</p>
+
+        <div class="video-grid">
+            <iframe src="4302.mp4" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/DzR3kq9yZks" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/Wp5yE2D4V4A" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+
+    <!-- ================= BOOK ================= -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Book Your Event</h2>
+        <button class="cta-book open-modal">Book Your Event Now</button>
+    </section>
+
+    <!-- ================= MODAL ================= -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h3 class="modal-title">Event Booking</h3>
+            <p class="modal-subtitle">Share your details and we’ll get back to you</p>
+
+            <form class="modal-form" id="bookingForm">
+                <input type="text" id="custName" placeholder="Your Name" required>
+                <input type="tel" id="custPhone" placeholder="Phone Number" required>
+                <textarea id="custDetails" placeholder="Event Details (date, location, type)"></textarea>
+                <button type="submit" class="modal-btn">Send On WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ================= PAYMENT MODAL ================= -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close" onclick="closePayment()">&times;</span>
+            <h3 class="modal-title">Complete Payment</h3>
+            <p class="modal-subtitle">Demo Razorpay UI</p>
+
+            <button class="modal-btn" onclick="payNow()">Pay ₹5,000</button>
+        </div>
+    </div>
+
+    <!-- ================= CONTACT INFO ================= -->
+    <section class="section contact-info">
+        <h2 class="section-title">Get in Touch</h2>
+
+        <div class="contact-info-grid">
+
+            <!-- LOCATION -->
+            <div class="contact-box">
+                <h3>📍 Location</h3>
+                <p>
+                    Manushpur, Bandel<br>
+                    Hooghly, West Bengal
+                </p>
+
+                <!-- GOOGLE MAP -->
+                <iframe class="map-frame" src="https://www.google.com/maps?q=Manushpur,Bandel,West+Bengal&output=embed"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- PHONE -->
+            <div class="contact-box">
+                <h3>📞 Phone</h3>
+                <p>+91 9433968314</p>
+
+                <a href="tel:+919433968314" class="contact-btn call-btn">
+                    📞 Call Now
+                </a>
+
+                <a href="https://wa.me/917439872795" target="_blank" rel="noopener noreferrer"
+                    class="contact-btn whatsapp-btn">
+                    <img src="whatsapp.png" alt="">
+                     WhatsApp
+                </a>
+            </div>
+
+            <!-- HOURS -->
+            <div class="contact-box">
+                <h3>⏰ Working Hours</h3>
+
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png" alt="Working Hours"
+                    class="working-icon">
+
+                <p>
+                    Monday – Sunday<br>
+                    9:00 AM – 9:00 PM
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <p>© 2026 Ma Tara Decoration. All Rights Reserved.</p>
+
+        <div class="footer-social">
+            <a href="#" title="Facebook"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#" title="Instagram"><img src="instagram.png" alt="Facebook"></a>
+            <a href="#" title="YouTube"><img src="youtube.png" alt="Facebook"></a>
+            <a href="https://wa.me/917439872795" target="_blank" rel="noopener noreferrer"><img src="whatsapp.png" alt="WhatsApp"></a>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
